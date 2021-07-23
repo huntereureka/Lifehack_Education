@@ -1,122 +1,186 @@
 <template>
-  <div class="hello">
-    <h1>{{ msg }}</h1>
-    <p>
-      For a guide and recipes on how to configure / customize this project,<br />
-      check out the
-      <a href="https://cli.vuejs.org" target="_blank" rel="noopener"
-        >vue-cli documentation</a
-      >.
-    </p>
-    <h3>Installed CLI Plugins</h3>
-    <ul>
-      <li>
-        <a
-          href="https://github.com/vuejs/vue-cli/tree/dev/packages/%40vue/cli-plugin-babel"
-          target="_blank"
-          rel="noopener"
-          >babel</a
-        >
-      </li>
-      <li>
-        <a
-          href="https://github.com/vuejs/vue-cli/tree/dev/packages/%40vue/cli-plugin-router"
-          target="_blank"
-          rel="noopener"
-          >router</a
-        >
-      </li>
-      <li>
-        <a
-          href="https://github.com/vuejs/vue-cli/tree/dev/packages/%40vue/cli-plugin-eslint"
-          target="_blank"
-          rel="noopener"
-          >eslint</a
-        >
-      </li>
-    </ul>
-    <h3>Essential Links</h3>
-    <ul>
-      <li>
-        <a href="https://vuejs.org" target="_blank" rel="noopener">Core Docs</a>
-      </li>
-      <li>
-        <a href="https://forum.vuejs.org" target="_blank" rel="noopener"
-          >Forum</a
-        >
-      </li>
-      <li>
-        <a href="https://chat.vuejs.org" target="_blank" rel="noopener"
-          >Community Chat</a
-        >
-      </li>
-      <li>
-        <a href="https://twitter.com/vuejs" target="_blank" rel="noopener"
-          >Twitter</a
-        >
-      </li>
-      <li>
-        <a href="https://news.vuejs.org" target="_blank" rel="noopener">News</a>
-      </li>
-    </ul>
-    <h3>Ecosystem</h3>
-    <ul>
-      <li>
-        <a href="https://router.vuejs.org" target="_blank" rel="noopener"
-          >vue-router</a
-        >
-      </li>
-      <li>
-        <a href="https://vuex.vuejs.org" target="_blank" rel="noopener">vuex</a>
-      </li>
-      <li>
-        <a
-          href="https://github.com/vuejs/vue-devtools#vue-devtools"
-          target="_blank"
-          rel="noopener"
-          >vue-devtools</a
-        >
-      </li>
-      <li>
-        <a href="https://vue-loader.vuejs.org" target="_blank" rel="noopener"
-          >vue-loader</a
-        >
-      </li>
-      <li>
-        <a
-          href="https://github.com/vuejs/awesome-vue"
-          target="_blank"
-          rel="noopener"
-          >awesome-vue</a
-        >
-      </li>
-    </ul>
+<div class="nav">
+      <nav class="mb-1 navbar navbar-expand-lg navbar-dark default-color">
+      <a class="navbar-brand" href="#">Navbar</a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent-3" aria-controls="navbarSupportedContent-3" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarSupportedContent-3">
+        <ul class="navbar-nav mr-auto">
+          <li class="nav-item active">
+            <a class="nav-link waves-effect waves-light" href="#">Home
+              <span class="sr-only">(current)</span>
+            </a>
+          </li>
+        </ul>
+        <ul class="navbar-nav ml-auto nav-flex-icons">
+          <li class="nav-item">
+            <a class="nav-link waves-effect waves-light">
+              <i class="fab fa-twitter"></i>
+            </a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link waves-effect waves-light">
+              <i class="fab fa-facebook"></i>
+            </a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link waves-effect waves-light">
+              <i class="fab fa-github"></i>
+            </a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link waves-effect waves-light">
+              <i class="fab fa-linkedin"></i>
+            </a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link waves-effect waves-light">
+              <i class="fab fa-google-plus-g"></i>
+            </a>
+          </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle waves-effect waves-light" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+              <i class="fas fa-user"></i>
+            </a>
+            <div class="dropdown-menu dropdown-menu-right dropdown-default" aria-labelledby="navbarDropdownMenuLink">
+              <a class="dropdown-item waves-effect waves-light" href="#">Action</a>
+              <a class="dropdown-item waves-effect waves-light" href="#">Another action</a>
+              <a class="dropdown-item waves-effect waves-light" href="#">Something else here</a>
+            </div>
+          </li>
+        </ul>
+      </div>
+    </nav>
+</div>
+<div class="container">
+  <div class="row">
+    <div class="col-5" id="nav">
+      <div>
+        <div id="class1" @click="displayMod1">
+            <a href="#" class="list-group-item list-group-item-action">
+                <div class="d-flex w-100 justify-content-between">
+                <h5 class="mb-1">IT3150 - English</h5>
+                </div>
+              </a>
+        </div>
+
+        <div id="class2" @click="displayMod2">            
+            <a href="#" class="list-group-item list-group-item-action">
+                <div class="d-flex w-100 justify-content-between">
+                <h5 class="mb-1">IT3151 - Mathematics</h5>
+                </div>
+                </a>
+        </div>
+            
+
+        <div id="class3" @click="displayMod3">
+            <a href="#" class="list-group-item list-group-item-action">
+                <div class="d-flex w-100 justify-content-between">
+                <h5 class="mb-1">IT3152 - Science</h5>
+                </div>
+                </a>
+        </div>
+
+        <div id="class4" @click="displayMod4">
+            <a href="#" class="list-group-item list-group-item-action">
+                <div class="d-flex w-100 justify-content-between">
+                <h5 class="mb-1">IT3153 - Social Studies</h5>
+                </div>
+                </a>
+        </div>
+
+        <div id="class5" @click="displayMod5">
+            <a href="#" class="list-group-item list-group-item-action">
+                <div class="d-flex w-100 justify-content-between">
+                <h5 class="mb-1">IT3154 - Mental Health & Awareness</h5>
+                </div>
+                </a>
+        </div>
+      </div>
+    </div>
+
+    <div class="col-7 subject" id="content">
+      <div class="list-group-item list-group-item-action">
+        <h> <b>{{ displayMod }} - {{ subject }}</b> </h>
+      </div>
+      <br/>
+      
+      <div class="question">
+        <label for="w3review">Enter your question for {{ displayMod }} - {{subject}} here!</label>
+        <br/>
+        <textarea rows="4" cols="50" placeholder="Type your questons here..."></textarea>
+        <br><br>
+        <input type="submit" value="Submit">
+    </div>
+    </div>
   </div>
+</div>
 </template>
 
 <script>
 export default {
   name: "HelloWorld",
-  props: {
-    msg: String,
+  data() {
+    return {
+      displayMod: "IT3150",
+      subject: "English"
+    }
   },
+  methods: {
+    displayMod1() {
+      this.displayMod = "IT3150",
+      this.subject = "English"
+    },
+    displayMod2() {
+      this.displayMod = "IT3151",
+      this.subject = "Mathematics"
+    },
+    displayMod3() {
+      this.displayMod = "IT3152",
+      this.subject = "Science"
+    },
+    displayMod4() {
+      this.displayMod = "IT3153",
+      this.subject = "Social Studies"
+    },
+    displayMod5() {
+      this.displayMod = "IT3154",
+      this.subject = "Mental Health & Awareness"
+    },
+  }
 };
 </script>
 
 <!-- Add "scoped" attribute to limit CSS to this component only -->
 <style scoped>
-h3 {
-  margin: 40px 0 0;
+
+#app {
+  font-family: Avenir, Helvetica, Arial, sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  color: #2c3e50;
 }
-ul {
-  list-style-type: none;
-  padding: 0;
+
+body{
+    background: #24305e;
 }
-li {
-  display: inline-block;
-  margin: 0 10px;
+
+#nav {
+    background: white;
 }
-a {
-  color: #42b983;
+
+#content{
+    background: silver;
+}
+
+.subject{
+    font-size:larger;
+    text-align:right;
+}
+
+.question {
+  background: silver;
+  text-align: center;
 }
 </style>

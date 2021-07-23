@@ -1,19 +1,18 @@
 <template>
-    <div class="test">
-        <p> THIS IS PROFILE </p>
-    </div>
-    
+    <div class>
+        <ClassroomList />
+    </div> 
 </template>
 
 <script>
-// @ is an alias to /src
+import ClassroomList from "@/components/ClassroomList.vue";
 
 export default {
   name: "Profile",
   components: {
-    
+    ClassroomList
   },
-};
+}
 </script>
 
 <style>
